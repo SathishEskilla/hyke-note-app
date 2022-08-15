@@ -1,0 +1,23 @@
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  div {
+    padding: 0 12px 0 24px;
+    border-bottom: 1px solid var(--white-10);
+    height: 44px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &.active {
+      background-color: var(--secondary-yellow-100);
+    }
+    span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.tags-list {
+  display: flex;
+  &__wrapper {
+    margin-right: 5px;
+  }
+  input {
+    background-color: var(--black-10);
+    color: var(--white-100);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 4px 8px;
+    width: max-content;
+    &::placeholder {
+      color: var(--white-100);
+    }
+  }
+}

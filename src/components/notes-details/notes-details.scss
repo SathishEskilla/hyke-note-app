@@ -1,0 +1,32 @@
+.notes_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  line-height: 24px;
+  opacity: 0.8;
+  input {
+    font-weight: inherit;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: 'Roboto-Medium';
+    color: var(--white-100);
+    background: transparent;
+    width: 100%;
+    word-break: break-all;
+    margin-bottom: 0;
+  }
+
+  Textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--white-100);
+    background: transparent;
+    height: 600px !important;
+  }
+}

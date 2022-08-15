@@ -1,0 +1,105 @@
+.dash-board-component {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  &__left-nav {
+    width: 10%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    background-color: var(--black-20);
+    padding: 32px 16px 16px;
+    text-align: left;
+    &__list {
+      cursor: pointer;
+      padding: 4px 8px;
+      &.active {
+        background-color: var(--secondary-yellow-100);
+        border-radius: 10px;
+      }
+    }
+    &__tags-list {
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        margin-bottom: 12px;
+        color: var(--white-10);
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-bottom: 8px;
+          font-size: 12px;
+          padding: 4px 8px;
+          cursor: pointer;
+          &.active {
+            background-color: var(--secondary-yellow-100);
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  &__sidebar {
+    width: 25%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    &__new-note {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 16px;
+      border-bottom: 1px solid var(--white-10);
+      border-right: 1px solid var(--white-10);
+      min-height: 50px;
+      height: 50px;
+      position: relative;
+      img {
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__notes-list {
+      border-right: 1px solid var(--white-10);
+      min-height: 600px;
+      height: 100%;
+      &__empty-list {
+        padding-top: 32px;
+        color: var(--white-20);
+      }
+    }
+  }
+  &__body {
+    width: calc(100% - 35%);
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    &__new-note {
+      padding: 16px 0 16px 32px;
+      border-bottom: 1px solid var(--white-10);
+      display: flex;
+      img {
+        height: 18px;
+        width: 18px;
+        cursor: pointer;
+      }
+    }
+    .notes_details {
+      padding: 24px 16px 16px 64px;
+    }
+    .tags-list {
+      padding-left: 64px;
+      position: absolute;
+      bottom: 12px;
+    }
+  }
+}

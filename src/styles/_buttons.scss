@@ -1,0 +1,22 @@
+@import './color';
+.tag-btn {
+  font-family: 'Roboto-Regular';
+  font-size: 14px;
+  min-width: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-100);
+  background-color: var(--black-10);
+  padding: 2px 8px;
+  span {
+    color: var(--white-100);
+  }
+  img {
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    padding-left: 4px;
+  }
+}
